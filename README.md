@@ -20,6 +20,19 @@ nanobox dev start
 # add a convenient way to access your app from the browser
 nanobox dev dns add laravel.nanobox.dev
 
+# console into your dev environment
+nanobox dev console
+
+# use the .env.example to create a local .env
+cp .env.example .env
+
+# generate an app key
+php artisan key:generate
+```
+
+Either exit out of your dev console, or open a new terminal and run the following:
+
+```bash
 # start the dev environment and run the app server (Apache & PHP-FPM)
 nanobox dev run
 ```

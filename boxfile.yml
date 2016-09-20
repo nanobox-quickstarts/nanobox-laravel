@@ -24,3 +24,4 @@ web.laravel:
     apache[error]: /data/var/log/apache/error.log
     php[error]: /data/var/log/php/php_error.log
     php[fpm]: /data/var/log/php/php_fpm.log
+    laravel[error]: /app/storage/logs/laravel.log
