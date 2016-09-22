@@ -27,11 +27,10 @@ cp .env.example .env
 
 # generate an app key
 php artisan key:generate
-```
 
-Either exit out of your dev console, or open a new terminal and run the following:
+# exit out of the dev console
+exit
 
-```bash
 # start the dev environment and run the app server (Apache & PHP-FPM)
 nanobox dev run
 ```
