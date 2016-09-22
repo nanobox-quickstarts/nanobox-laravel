@@ -10,16 +10,16 @@ git clone https://github.com/nanobox-quickstarts/nanobox-laravel.git
 # cd into the laravel app
 cd nanobox-laravel
 
-# build the code
+# build runtime and compile application
 nanobox build
 
-# start the dev environment
-nanobox dev start
+# deploy runtime to dev environment
+nanobox dev deploy
 
 # add a convenient way to access your app from the browser
 nanobox dev dns add laravel.nanobox.dev
 
-# console into your dev environment
+# console into dev environment
 nanobox dev console
 
 # use the .env.example to create a local .env
