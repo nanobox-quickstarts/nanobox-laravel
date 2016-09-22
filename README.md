@@ -19,7 +19,7 @@ nanobox dev deploy
 # add a convenient way to access your app from the browser
 nanobox dev dns add laravel.nanobox.dev
 
-# console into dev environment
+# console into the dev environment
 nanobox dev console
 
 # use the .env.example to create a local .env
