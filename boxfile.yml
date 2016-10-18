@@ -14,11 +14,12 @@ code.build:
       - hash
       - zip
       - dom
+      - xml
 
 web.laravel:
   start:
-    fpm: /data/sbin/php-fpm -y /data/etc/php/php-fpm.conf -c /data/etc/php/php.ini
-    apache: /data/sbin/httpd -DNO_DETACH
+    fpm: start-php
+    apache: start-apache
   log_watch:
     laravel[error]: /app/storage/logs/laravel.log
     apache[access]: /data/var/log/apache/access.log
