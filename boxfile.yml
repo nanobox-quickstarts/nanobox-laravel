@@ -1,5 +1,5 @@
 code.build:
-  engine: php#feature/simplify
+  engine: php
   config:
     runtime: php-7.0
     document_root: public
