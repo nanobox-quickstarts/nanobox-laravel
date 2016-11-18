@@ -1,40 +1,48 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img width="150"src="https://laravel.com/laravel.png"></a></p>
+![Laravel from scratch](https://guides.nanobox.io/assets/quickstart-icons/laravel.png)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+#### Clone the repo
 
-## About Laravel
+```bash
+# clone the code
+git clone https://github.com/nanobox-quickstarts/nanobox-laravel.git
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+# cd into the laravel app
+cd nanobox-laravel
+```
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+#### Run the app
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+```bash
+# Run laravel as you would normally, with Nanobox
+nanobox run php artisan serve --host 0.0.0.0
+```
 
-## Learning Laravel
+#### Check it out
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+```bash
+# Add a convenient way to access your app from the browser
+nanobox dns add local laravel.dev
+```
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Visit your app at <a href="http://laravel.dev:8000" target="\_blank">laravel.dev:8000</a>
 
-## Contributing
+#### Explore
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+With Nanobox, you don't have to have anything installed on your machine to run your app:
 
-## Security Vulnerabilities
+```bash
+# drop into a Nanobox console
+nanobox run
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+# where ruby is installed,
+ruby -v
 
-## License
+# your gems are available,
+gem list
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+# and your code is mounted
+ls
+```
+
+#### Now What?
+For more details about running laravel apps with nanobox visit [guides.nanobox.io/ruby/laravel/](https://guides.nanobox.io/ruby/laravel/)
