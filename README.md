@@ -41,17 +41,17 @@ With Nanobox, you don't have to have anything installed on your machine to run y
 # drop into a Nanobox console
 nanobox run
 
-# where ruby is installed,
-ruby -v
+# where laravel is installed,
+laravel -v
 
-# your gems are available,
-gem list
+# your packages are available,
+composer show
 
 # and your code is mounted
 ls
 ```
 
 ## Now What?
-For more details about running laravel apps with nanobox visit [guides.nanobox.io/ruby/laravel/](https://guides.nanobox.io/ruby/laravel/)
+For more details about running laravel apps with nanobox visit [guides.nanobox.io/php/laravel/](https://guides.nanobox.io/php/laravel/)
 
 <a href="https://nanobox.io"><img src="https://guides.nanobox.io/assets/quickstart-icons/footer.png" /></a>
