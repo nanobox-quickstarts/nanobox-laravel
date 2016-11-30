@@ -42,7 +42,7 @@ With Nanobox, you don't have to have anything installed on your machine to run y
 nanobox run
 
 # where laravel is installed,
-laravel -v
+php -v
 
 # your packages are available,
 composer show
