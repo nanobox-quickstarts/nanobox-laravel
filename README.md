@@ -2,7 +2,7 @@
 
 # Laravel from scratch
 
-Run a Laravel app locally, install nothing besides nanobox. 
+Run a Laravel app locally, install nothing besides nanobox.
 
 <a href="https://nanobox.io/download"><img src="https://guides.nanobox.io/assets/quickstart-icons/download.png" /></a>
 
