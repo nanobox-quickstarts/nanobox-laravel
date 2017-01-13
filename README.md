@@ -20,16 +20,14 @@ cd nanobox-laravel
 ## Run the app
 
 ```bash
+# Add a convenient way to access your app from the browser
+nanobox dns add local laravel.dev
+
 # Run laravel as you would normally, with Nanobox
 nanobox run php artisan serve --host 0.0.0.0
 ```
 
 ## Check it out
-
-```bash
-# Add a convenient way to access your app from the browser
-nanobox dns add local laravel.dev
-```
 
 Visit your app at <a href="http://laravel.dev:8000" target="\_blank">laravel.dev:8000</a>
 
