@@ -65,28 +65,32 @@ return [
         //     'strict' => true,
         //     'engine' => null,
         // ],
-
+        
+        // This configuration assumes the id of the Redis
+        // component in your boxfile.yml is 'data.db'        
         'mysql' => [
           'driver' => 'mysql',
-          'host' => env('DATA_DB_HOST', ''),
+          'host' => $_ENV['DATA_DB_HOST'],
           'port' => '3306',
           'database' => 'gonano',
-          'username' => env('DATA_DB_USER', ''),
-          'password' => env('DATA_DB_PASS', ''),
+          'username' => $_ENV['DATA_DB_USER'],
+          'password' => $_ENV['DATA_DB_PASS'],
           'charset' => 'utf8',
           'collation' => 'utf8_unicode_ci',
           'prefix' => '',
           'strict' => true,
           'engine' => null,
         ],
-
+        
+        // This configuration assumes the id of the Postgres
+        // component in your boxfile.yml is 'data.pg' 
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'host' => $_ENV['DATA_PG_HOST'],
+            'port' => '5432'),
+            'database' => 'gonano',
+            'username' => $_ENV['DATA_PG_USER'],
+            'password' => $_ENV['DATA_PG_PASS'],
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
@@ -123,10 +127,13 @@ return [
 
         'cluster' => false,
 
+        // This configuration assumes the id of the Redis
+        // component in your boxfile.yml is 'data.redis'
+        
         'default' => [
-            'host' => env('REDIS_HOST', '127.0.0.1'),
-            'password' => env('REDIS_PASSWORD', ''),
-            'port' => env('REDIS_PORT', 6379),
+            'host' => $_ENV['DATA_REDIS_HOST'],
+            'password' => '',
+            'port' => '6379',
             'database' => 0,
         ],
 
