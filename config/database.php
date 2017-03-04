@@ -87,7 +87,7 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'host' => $_ENV['DATA_PG_HOST'],
-            'port' => '5432'),
+            'port' => '5432',
             'database' => 'gonano',
             'username' => $_ENV['DATA_PG_USER'],
             'password' => $_ENV['DATA_PG_PASS'],
