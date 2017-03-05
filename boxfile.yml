@@ -12,7 +12,7 @@ run.config:
     webserver: nginx
 
     # public directory
-    document_root: web
+    document_root: public
 
     # enables php extensions
     extensions:
