@@ -51,30 +51,16 @@ return [
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
         ],
-
-        // 'mysql' => [
-        //     'driver' => 'mysql',
-        //     'host' => env('DB_HOST', '127.0.0.1'),
-        //     'port' => env('DB_PORT', '3306'),
-        //     'database' => env('DB_DATABASE', 'forge'),
-        //     'username' => env('DB_USERNAME', 'forge'),
-        //     'password' => env('DB_PASSWORD', ''),
-        //     'charset' => 'utf8',
-        //     'collation' => 'utf8_unicode_ci',
-        //     'prefix' => '',
-        //     'strict' => true,
-        //     'engine' => null,
-        // ],
         
-        // This configuration assumes the id of the Redis
+        // This configuration assumes the id of the Mysql
         // component in your boxfile.yml is 'data.db'        
         'mysql' => [
           'driver' => 'mysql',
-          'host' => $_ENV['DATA_DB_HOST'],
+          'host' => env('DATA_DB_HOST'),
           'port' => '3306',
           'database' => 'gonano',
-          'username' => $_ENV['DATA_DB_USER'],
-          'password' => $_ENV['DATA_DB_PASS'],
+          'username' => env('DATA_DB_USER'),
+          'password' => env('DATA_DB_PASS'),
           'charset' => 'utf8',
           'collation' => 'utf8_unicode_ci',
           'prefix' => '',
@@ -86,11 +72,11 @@ return [
         // component in your boxfile.yml is 'data.pg' 
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => $_ENV['DATA_PG_HOST'],
+            'host' => env('DATA_PG_HOST'),
             'port' => '5432',
             'database' => 'gonano',
-            'username' => $_ENV['DATA_PG_USER'],
-            'password' => $_ENV['DATA_PG_PASS'],
+            'username' => env('DATA_PG_USER'),
+            'password' => env('DATA_PG_PASS'),
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
@@ -131,7 +117,7 @@ return [
         // component in your boxfile.yml is 'data.redis'
         
         'default' => [
-            'host' => $_ENV['DATA_REDIS_HOST'],
+            'host' => env('DATA_REDIS_HOST'),
             'password' => '',
             'port' => '6379',
             'database' => 0,
