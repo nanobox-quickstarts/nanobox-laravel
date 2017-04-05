@@ -35,11 +35,11 @@ deploy.config:
 
 # add a MySQL database
 data.db:
-  image: nanobox/mysql
+  image: nanobox/mysql:5.6
 
 # add a local storage database
 data.storage:
-  image: nanobox/unfs
+  image: nanobox/unfs:0.9
 
 # add a web server
 web.main:
