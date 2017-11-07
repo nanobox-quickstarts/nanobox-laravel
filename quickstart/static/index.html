@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='ie=edge' http-equiv='x-ua-compatible'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <title>Laravel Running with Nanobox</title>
+    <link href="/css/app.css" rel="stylesheet" />
+    <link href="/favicon.png" rel="icon" type="image/png" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'>
+  </head>
+  <body>
+    <div class='wrapper'>
+      <div class='logo'>
+        <div class='shadow'>
+          <svg id="shadow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 182 150" style="enable-background:new 0 0 182 150;" xml:space="preserve">
+            <g>
+              <linearGradient id="shadow1" gradientUnits="userSpaceOnUse" x1="91" y1="60.3529" x2="91" y2="149.6471">
+                <stop offset="0" style="stop-opacity:0.15"/>
+                <stop offset="1" style="stop-opacity:0"/>
+              </linearGradient>
+              <polygon style="fill:url(#shadow1);" points="132.472,151 49.528,151 39,59 143,59 	"/>
+              <linearGradient id="shadow2" gradientUnits="userSpaceOnUse" x1="137.1126" y1="4.0879" x2="137.1126" y2="126.1118" gradientTransform="matrix(-0.9397 0.342 0.342 0.9397 215.5601 -28.7775)">
+                <stop offset="0" style="stop-opacity:0.15"/>
+                <stop offset="1" style="stop-opacity:0"/>
+              </linearGradient>
+              <polygon style="fill:url(#shadow2);" points="104,148 181.686,119.138 143.041,0 39.041,60 	"/>
+              <linearGradient id="shadow3" gradientUnits="userSpaceOnUse" x1="100.5498" y1="17.3334" x2="100.5498" y2="139.3574" gradientTransform="matrix(0.9397 0.342 -0.342 0.9397 5.1672 -28.7775)">
+                <stop offset="0" style="stop-opacity:0.15"/>
+                <stop offset="1" style="stop-opacity:0"/>
+              </linearGradient>
+              <polygon style="fill:url(#shadow3);" points="78,148 0.314,119.138 38.959,0 142.959,59 	"/>
+            </g>
+          </svg>
+        </div>
+        <div class='icon'>
+          <svg version="1.1" id="laravel" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 45.895 52.998" style="enable-background:new 0 0 45.895 52.998;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:#FB503B;}
+              .st1{fill:#FFFFFF;}
+              .st2{fill:#FD9689;}
+            </style>
+            <g id="hex-laravel">
+              <polygon class="st1" points="45.895,39.737 22.924,52.998 -0.041,39.737 -0.041,13.214 22.924,-0.047 45.895,13.214 	"/>
+              <path class="st0" d="M39.229,26.829L39.229,26.829c-0.109-0.122-1.047-1.284-1.875-2.318c-0.828-1.034-1.58-1.965-1.824-2.261
+		c-0.255-0.455-0.773-0.693-1.284-0.591h-0.077c-0.334,0.051-4.155,0.694-4.495,0.751c-0.314,0.019-0.598,0.189-0.764,0.456
+		c-0.079,0.22-0.033,0.466,0.122,0.642l2.993,4.238l-9.228,2.209l-7.706-12.844l-0.051-0.077c-0.231-0.483-0.76-0.747-1.284-0.642
+		c-0.726,0.032-6.287,0.494-6.518,0.514c-0.297-0.003-0.576,0.141-0.745,0.385c-0.161,0.372-0.137,0.798,0.064,1.15
+		c0.27,0.642,3.211,7.064,5.202,11.29L13.265,33c0.319,0.792,1.199,1.2,2.01,0.931c0.957-0.231,4.059-1.034,6.582-1.695
+		c1.445,2.614,3.211,5.741,3.564,6.255c0.224,0.412,0.649,0.676,1.117,0.694c0.327-0.021,0.649-0.088,0.957-0.199
+		c0.7-0.212,10.211-3.641,10.564-3.783c0.3-0.068,0.553-0.269,0.687-0.546c0.048-0.226-0.009-0.462-0.154-0.642
+		c-0.186-0.276-2.087-2.826-3.757-5.06l3.988-1.06c0.254-0.041,0.468-0.215,0.559-0.456C39.442,27.222,39.384,26.991,39.229,26.829z
+		 M33.141,29.269l1.355,1.862l1.843,2.53l-3.307,1.124c-4.123,1.394-5.979,2.023-6.075,2.068h-0.051
+		c-0.047-0.041-0.088-0.088-0.122-0.141c-0.167-0.238-2.029-3.449-2.948-5.041L33.141,29.269z M31.041,23.765
+		c0.835-0.148,3.211-0.572,3.378-0.642c0.017,0.004,0.035,0.004,0.051,0c0.028,0.021,0.052,0.047,0.071,0.077
+		c0.128,0.173,1.22,1.561,2.383,3.038l0.206,0.257l-3.468,0.854L31.041,23.765z M36.66,33.585 M20.818,30.425l-5.658,1.361l0,0
+		C14.518,30.502,9.258,19.585,8.629,18.3l2.511-0.218l2.505-0.218C13.876,18.326,20.15,29.269,20.818,30.425z"/>
+            </g>
+          </svg>
+        </div>
+        <div class='burst'>
+          <svg id="burst" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 204 204" style="enable-background:new 0 0 204 204;" xml:space="preserve">
+            <g>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="102" y1="26" x2="102" y2="0"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="140" y1="36.182" x2="146.8" y2="24.403"/>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="167.818" y1="64" x2="190.335" y2="51"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="178" y1="102" x2="191.601" y2="102"/>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="167.818" y1="140" x2="190.335" y2="153"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="140" y1="167.818" x2="146.8" y2="179.597"/>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="102" y1="178" x2="102" y2="204"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="64" y1="167.818" x2="57.2" y2="179.597"/>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="36.182" y1="140" x2="13.665" y2="153"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="26" y1="102" x2="12.399" y2="102"/>
+              <line class="long" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="36.182" y1="64" x2="13.665" y2="51"/>
+              <line class="short" style="fill:none;stroke-width:3;stroke-miterlimit:10;" x1="64" y1="36.182" x2="57.2" y2="24.403"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class='content'>
+        <h2>Woohoo! You’re running Laravel with Nanobox!</h2>
+        <p>Nanobox has bootstrapped a Laravel project for you inside a fully containerized PHP environment. Deploy all the things!</p>
+        <div class='links'>
+          <div class='list'>
+            <h4>More Info</h4>
+            <ul>
+              <li><a href="https://guides.nanobox.io/php/laravel" target="_blank">Nanobox Laravel Guides</a></li>
+              <li><a href="https://guides.nanobox.io/mysql" target="_blank">Nanobox MySQL Guides</a></li>
+              <li><a href="https://docs.nanobox.io" target="_blank">Nanobox Docs</a></li>
+            </ul>
+          </div>
+          <div class='list'>
+            <h4>Get In Touch</h4>
+            <ul>
+              <li><a href="https://nanoboxio.slack.com" target="_blank">Nanobox Slack</a></li>
+              <li><a href="mailto:hello@nanobox.io">Email Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class='qs-repo'>View the <a href="https://github.com/nanobox-quickstarts/nanobox-laravel#readme" target="_blank">Laravel Quickstart repo</a> for information about what was involved in the bootstrapping process.</p>
+        <div class='footer'>
+          <p>
+            Bootstrapped with
+            <span class='heart'>
+              <svg version="1.1" id="heart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 95" style="enable-background:new 0 0 100 95;" xml:space="preserve">
+                <path d="M73.896,0C63.222,0,54.046,6.456,50,15.704C45.954,6.456,36.778,0,26.104,0
+		C11.687,0,0,11.776,0,26.302C0,56.791,50,95,50,95s50-38.209,50-68.698C100,11.776,88.313,0,73.896,0z"/>
+              </svg>
+            </span>
+            by <a href="https://nanobox.io" target="_blank">Nanobox</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
