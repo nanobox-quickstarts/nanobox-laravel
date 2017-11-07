@@ -1,4 +1,4 @@
-[Laravel with Nanobox](https://guides.nanobox.io/assets/quickstart-icons/laravel.png)
+![Laravel with Nanobox](https://guides.nanobox.io/assets/quickstart-icons/laravel.png)
 
 This is a Laravel quickstart provided by Nanobox that  will generate a brand new Laravel project and configure it for Nanobox. To run the quickstart locally, download and install Nanobox.
 
