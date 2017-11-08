@@ -37,8 +37,16 @@ web.site:
   log_watch:
     laravel[error]: /app/storage/logs/laravel.log
 
-data.db:
+data.mysql:
   image: nanobox/mysql:5.7
 
 data.storage:
   image: nanobox/unfs:0.9
+
+# Uncomment to inlcude a Postgres database
+# data.postgres:
+#   image: nanobox/postgres:9.6
+
+# Uncomment to inlcude a Redis service
+# data.redis:
+#   image: nanobox/postgres:4.0
