@@ -17,7 +17,8 @@ run.config:
       - pdo_mysql
 
   extra_steps:
-    - bash quickstart/install.sh
+    # Run the quickstart and clean-up afterward
+    - bash quickstart/install.sh && rm -rf quickstart
 
 deploy.config:
   before_live:
