@@ -23,7 +23,8 @@ deploy.config:
   before_live:
     web.site:
       - mkdir -p storage/{app,framework/{sessions,cache,views},logs,public}
-      - php artisan migrate --force
+      # Uncomment to run db migrations on deploy
+      # - php artisan migrate --force
 
 web.site:
   start:
