@@ -14,7 +14,7 @@ if [ ! -d public ]; then
   laravel new
 
   # Update the database connection variables in .env
-  sed -e "s/DB_HOST=127.0.0.1/DB_HOST=\$DATA_DB_HOST/g; s/DB_DATABASE=homestead/DB_DATABASE=gonano/g; s/DB_USERNAME=homestead/DB_USERNAME=\$DATA_DB_USER/g; s/DB_PASSWORD=secret/DB_PASSWORD=\$DATA_DB_PASS/g" .env --quiet
+  sed -i -e "s/DB_HOST=127.0.0.1/DB_HOST=\$DATA_MYSQL_HOST/g; s/DB_DATABASE=homestead/DB_DATABASE=gonano/g; s/DB_USERNAME=homestead/DB_USERNAME=\$DATA_MYSQL_USER/g; s/DB_PASSWORD=secret/DB_PASSWORD=\$DATA_MYSQL_PASS/g; s/REDIS_HOST=127.0.0.1/REDIS_HOST==\$DATA_REDIS_HOST/g" .env
 
   # Add Nanobox landing page and assets
   cp quickstart/static/favicon.png public/favicon.png
