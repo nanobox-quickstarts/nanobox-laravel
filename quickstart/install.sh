@@ -21,7 +21,7 @@ if [ ! -d public ]; then
   cp quickstart/static/styles.css public/css/app.css
   cp quickstart/static/index.html resources/views/welcome.blade.php
 
-  # Remove quickstart intall from boxfile.yml
+  # Remove quickstart files and extra_step
   sed -i "18,20d" boxfile.yml
 
 fi
