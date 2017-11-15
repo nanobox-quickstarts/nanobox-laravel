@@ -21,6 +21,8 @@ run.config:
     - bash quickstart/install.sh && rm -rf quickstart
 
 deploy.config:
+  extra_steps:
+    - mv .env.prod .env
   before_live:
     web.site:
       - mkdir -p storage/{app,framework/{sessions,cache,views},logs,public}
@@ -51,4 +53,4 @@ data.storage:
 
 # Uncomment to inlcude a Redis service
 # data.redis:
-#   image: nanobox/postgres:4.0
+#   image: nanobox/redis:4.0
