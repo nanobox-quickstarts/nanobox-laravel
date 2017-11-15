@@ -16,17 +16,33 @@ run.config:
       - xmlwriter
       - pdo_mysql
 
+  # Use node/npm locally for mix
+  # dev_packages:
+  #   - nodejs
+  #   - python-2.7.14
+  # cache_dirs:
+  #   - node_modules
+  # extra_path_dirs:
+  #   - node_modules/.bin
+  # build_triggers:
+  #   - package.json
+
+  # Load node modules and run mix tasks during your build
   extra_steps:
+    # - npm install
+    # - npm run dev
     # Run the quickstart and clean-up afterward
     - bash quickstart/install.sh && rm -rf quickstart
 
 deploy.config:
   extra_steps:
     - mv .env.prod .env
+    # Run mix tasks when deploying
+    # - npm run production
   before_live:
     web.site:
       - mkdir -p storage/{app,framework/{sessions,cache,views},logs,public}
-      # Uncomment to run db migrations on deploy
+      # Run db migrations on deploy
       # - php artisan migrate --force
 
 web.site:
@@ -47,10 +63,10 @@ data.mysql:
 data.storage:
   image: nanobox/unfs:0.9
 
-# Uncomment to inlcude a Postgres database
+# Inlcude a Postgres database
 # data.postgres:
 #   image: nanobox/postgres:9.6
 
-# Uncomment to inlcude a Redis service
+# Inlcude a Redis service
 # data.redis:
 #   image: nanobox/redis:4.0
