@@ -18,7 +18,7 @@ cd nanobox-laravel
 
 ```bash
 # Add a convenient way to access your app from the browser
-nanobox dns add local laravel.dev
+nanobox dns add local laravel.local
 
 # Run laravel as you would normally, with Nanobox
 nanobox run php-server
@@ -26,7 +26,7 @@ nanobox run php-server
 
 ## Check it Out
 
-Visit your app at <a href="http://laravel.dev" target="\_blank">laravel.dev</a>
+Visit your app at <a href="http://laravel.local" target="\_blank">laravel.local</a>
 
 ## Explore
 
