@@ -57,10 +57,11 @@ cp quickstart/static/styles.css public/css/app.css
 cp quickstart/static/index.html resources/views/welcome.blade.php
 
 # Remove quickstart files and extra_step
-sed -i -e "1,4d; 38,39d" boxfile.yml
+sed -i -e "/###\|quickstart/d" boxfile.yml
 
 # Comment out extra_steps if npm commands are still commented
-commentcheck=$(sed '36!d' boxfile.yml)
-if [[ $commentcheck = \#* ]]; then
-  sed -i "35s/extra_steps/# extra_steps/" test-boxfile.yml
+commentcheck=$(sed '/npm install/!d' boxfile.yml)
+if expr match "$commentcheck" " *#" >/dev/null
+then
+  sed -i "/extra_steps: #/s/extra_steps/# extra_steps/" boxfile.yml
 fi
