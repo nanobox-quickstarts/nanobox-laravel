@@ -1,7 +1,7 @@
-# This boxfile.yml is designed to generate a Laravel project when first run.
-# If you have an existing Laravel project and are using this as a template,
-# Remove lines 38 and 39 and uncomment lines 36 and 37 (the npm commands)
-
+### This boxfile.yml is designed to generate a Laravel project when first run.
+### If you have an existing Laravel project and are using this as a template,
+### Remove lines 37 and 38 and uncomment lines 35 and 36 (the npm commands)
+###
 run.config:
   engine: php
   engine.config:
@@ -23,7 +23,7 @@ run.config:
   # Use node/npm locally for mix
   # dev_packages:
   #   - nodejs
-  #   - python-2.7.14
+  #   - python-2.7
   # cache_dirs:
   #   - node_modules
   # extra_path_dirs:
@@ -31,8 +31,7 @@ run.config:
   # build_triggers:
   #   - package.json
 
-  # Load node modules and run mix tasks during your build
-  extra_steps:
+  extra_steps: # Load node modules and run mix tasks during your build
     # - npm install
     # - npm run dev
     # Run the quickstart and clean-up afterward
