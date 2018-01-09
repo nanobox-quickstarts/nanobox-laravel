@@ -19,9 +19,6 @@ s/DB_PASSWORD.*$/DB_PASSWORD=\$DATA_MYSQL_PASS/g;
 s/REDIS_HOST.*$/REDIS_HOST=\$DATA_REDIS_HOST/g
 " .env
 
-# Generate .env.prod
-cp .env .env.prod
-
 # Documentation to be prepended to .env.prod
 documentation="# PRODUCTION ENVIRONMENT SETTINGS
 # When deploying to a live app with Nanobox, this file will
@@ -31,8 +28,8 @@ documentation="# PRODUCTION ENVIRONMENT SETTINGS
 # https://docs.nanobox.io/app-config/environment-variables/#custom-environment-variables\n
 # * Should be added in your dashboard or through the nanobox cli\n\n"
 
-# Prepend .env.prod with documentation
-echo -e "$documentation$(cat .env.prod)" > .env.prod
+# Generate .env.prod
+echo -e "$documentation$(cat .env)" > .env.prod
 
 # Update values in .env.prod
 sed -i -e "
